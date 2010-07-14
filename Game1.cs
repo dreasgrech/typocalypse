@@ -26,7 +26,6 @@ namespace Typocalypse
         private Player player;
         private EnemyManager enemyManager;
         private List<string> wordList;
-        //public GlobalKeyboardHook kbHook = new GlobalKeyboardHook();
         private Texture2D background;
         private Texture2D splash;
         private Song theme;
@@ -67,11 +66,9 @@ namespace Typocalypse
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Services.AddService(typeof(SpriteBatch), spriteBatch);
-            // TODO: Add your initialization logic here
             player = new Player(this, new Vector2(GraphicsDevice.PresentationParameters.BackBufferWidth / 2, GraphicsDevice.PresentationParameters.BackBufferHeight - 50), MathHelper.ToRadians(0f), 0.5f, "player");
             enemyManager = new EnemyManager(this, player, wordList);
             player.EnemyManager = enemyManager;
-            player.X -= player.Width;
             player.Y -= player.Height;
             base.Initialize();
         }
@@ -82,7 +79,6 @@ namespace Typocalypse
         /// </summary>
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
             Components.Add(player);
             Components.Add(enemyManager);
             background = Content.Load<Texture2D>("background");
@@ -140,7 +136,6 @@ namespace Typocalypse
 
         void PopulateWordList()
         {
-            //TODO:remove relative path
             string path = @"Content\dict.txt", line;
             if (File.Exists(path))
             {
