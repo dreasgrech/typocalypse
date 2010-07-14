@@ -1,1 +1,2 @@
 C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+S:\Programming\Games\Typocalypse\Content\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\player.xnb</Output>
-      <Time>2010-07-06T06:58:39.813775+02:00</Time>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\player.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
     </Item>
     <Item>
       <Source>projectile.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\projectile.xnb</Output>
-      <Time>2010-07-05T18:17:26.3484908+02:00</Time>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\projectile.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
     </Item>
     <Item>
       <Source>enemy.png</Source>
@@ -25,35 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\enemy.xnb</Output>
-      <Time>2010-07-05T21:15:28.7434889+02:00</Time>
-    </Item>
-    <Item>
-      <Source>ScoreFont.spritefont</Source>
-      <Name>ScoreFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\ScoreFont.xnb</Output>
-      <Time>2010-07-06T02:28:59.242177+02:00</Time>
-    </Item>
-    <Item>
-      <Source>MatchedFont.spritefont</Source>
-      <Name>MatchedFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\MatchedFont.xnb</Output>
-      <Time>2010-07-06T03:21:42.3270951+02:00</Time>
-    </Item>
-    <Item>
-      <Source>UnmatchedFont.spritefont</Source>
-      <Name>UnmatchedFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\UnmatchedFont.xnb</Output>
-      <Time>2010-07-06T06:42:48.8773846+02:00</Time>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\enemy.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
     </Item>
     <Item>
       <Source>pixel.png</Source>
@@ -61,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\pixel.xnb</Output>
-      <Time>2010-07-06T03:23:23.6318894+02:00</Time>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\pixel.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
     </Item>
     <Item>
       <Source>background.jpg</Source>
@@ -70,54 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2010-07-06T05:29:56.4242946+02:00</Time>
-    </Item>
-    <Item>
-      <Source>back-effects.wav</Source>
-      <Name>back-effects</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\back-effects.xnb</Output>
-      <Time>2010-07-06T05:47:00.6468767+02:00</Time>
-    </Item>
-    <Item>
-      <Source>hero-dies.wav</Source>
-      <Name>hero-dies</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\hero-dies.xnb</Output>
-      <Time>2010-07-06T05:47:00.6748783+02:00</Time>
-    </Item>
-    <Item>
-      <Source>monster-dies.wav</Source>
-      <Name>monster-dies</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\monster-dies.xnb</Output>
-      <Time>2010-07-06T05:47:00.685879+02:00</Time>
-    </Item>
-    <Item>
-      <Source>player-dies.wav</Source>
-      <Name>player-dies</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\player-dies.xnb</Output>
-      <Time>2010-07-06T06:21:34.5954998+02:00</Time>
-    </Item>
-    <Item>
-      <Source>back-music.mp3</Source>
-      <Name>themesong</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\themesong.xnb</Output>
-      <Extra>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\themesong.wma</Extra>
-      <Time>2010-07-06T06:21:34.5534974+02:00</Time>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
     </Item>
     <Item>
       <Source>zombie.png</Source>
@@ -125,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\zombie.xnb</Output>
-      <Time>2010-07-06T06:41:47.4238696+02:00</Time>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\zombie.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
     </Item>
     <Item>
       <Source>splash.png</Source>
@@ -134,18 +61,91 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\splash.xnb</Output>
-      <Time>2010-07-07T16:52:33.6990865+02:00</Time>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\splash.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
+    </Item>
+    <Item>
+      <Source>ScoreFont.spritefont</Source>
+      <Name>ScoreFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\ScoreFont.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MatchedFont.spritefont</Source>
+      <Name>MatchedFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\MatchedFont.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UnmatchedFont.spritefont</Source>
+      <Name>UnmatchedFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\UnmatchedFont.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
+    </Item>
+    <Item>
+      <Source>back-effects.wav</Source>
+      <Name>back-effects</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\back-effects.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
+    </Item>
+    <Item>
+      <Source>hero-dies.wav</Source>
+      <Name>hero-dies</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\hero-dies.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
+    </Item>
+    <Item>
+      <Source>monster-dies.wav</Source>
+      <Name>monster-dies</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\monster-dies.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
+    </Item>
+    <Item>
+      <Source>player-dies.wav</Source>
+      <Name>player-dies</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\player-dies.xnb</Output>
+      <Time>2010-07-14T21:57:52+02:00</Time>
+    </Item>
+    <Item>
+      <Source>back-music.mp3</Source>
+      <Name>themesong</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\themesong.xnb</Output>
+      <Extra>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\themesong.wma</Extra>
+      <Time>2010-07-14T21:57:52+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Andreas\Documents\Visual Studio 2008\Projects\Typocalypse\Typocalypse\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>S:\Programming\Games\Typocalypse\Content\</RootDirectory>
+      <LoggerRootDirectory>S:\Programming\Games\Typocalypse\</LoggerRootDirectory>
+      <IntermediateDirectory>S:\Programming\Games\Typocalypse\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>S:\Programming\Games\Typocalypse\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -174,7 +174,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2010-07-02T14:22:13.7511799+02:00</Value>
+        <Value>2010-07-04T19:28:15.7473802+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

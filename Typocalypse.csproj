@@ -18,7 +18,7 @@
     <ManifestCertificateThumbprint>3589BF0416C68C350AE6589ECF89953A9EBCB8EB</ManifestCertificateThumbprint>
     <ManifestKeyFile>Typocalypse_TemporaryKey.pfx</ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -116,7 +116,6 @@
     <None Include="dict.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Typocalypse_TemporaryKey.pfx" />
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
   </ItemGroup>
