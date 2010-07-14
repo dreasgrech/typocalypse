@@ -141,7 +141,7 @@ namespace Typocalypse
         void PopulateWordList()
         {
             //TODO:remove relative path
-            string path = String.Format(@"{0}\dict.txt", StorageContainer.TitleLocation), line;
+            string path = @"Content\dict.txt", line;
             if (File.Exists(path))
             {
                 StreamReader file = new StreamReader(path); ;
