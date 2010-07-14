@@ -68,6 +68,7 @@ namespace Typocalypse
                     trie.Matcher.ResetMatch();
                     currentlyMatched.ForEach(e => e.TextBox.ResetMatchedPrefixLength());
                     currentlyMatched.Clear();
+                    trie.Remove(exactMatch.TextBox.Text);
                 }
                 return exactMatch;
             }

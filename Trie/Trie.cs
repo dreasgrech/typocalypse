@@ -58,7 +58,7 @@ namespace Typocalypse.Trie
             node.Value = null;
 
             //Remove all ancestor nodes which don't lead to a value.
-            while (node != root && !node.IsTerminater() && node.NumChildren() == 1)
+            while (node != root && !node.IsTerminater() && node.NumChildren() == 0)
             {
                 char prevKey = node.Key;
                 node = node.Parent;
