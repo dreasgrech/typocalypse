@@ -31,17 +31,16 @@ namespace Typocalypse
             currentlyMatched = new List<Enemy>();
         }
 
+        /// <summary>
+        /// See http://geekyisawesome.blogspot.com/2010/07/biasing-uniform-random-fraction.html
+        /// </summary>
         private static double BiasedRandom(double bias)
         {
-            return (Math.Exp(bias * rand.NextDouble()) - 1) / (Math.Exp(bias) - 1);
+            return Math.Pow(rand.NextDouble(), Math.Log(0.5)/Math.Log(bias));
         }
 
         public EnemyTextBox RegisterEnemy(Enemy enemy, double bias)
         {
-            if (bias == 0)
-            {
-                bias += 0.1;
-            }
             String text = texts[(int)(texts.Count * BiasedRandom(bias))];
             EnemyTextBox textBox = new EnemyTextBox(game, text);
             trie.Put(text, enemy);

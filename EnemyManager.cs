@@ -19,9 +19,12 @@ namespace Typocalypse
         public event EventHandler PlayerHit;
         public bool IsActive { get; set; }
         private List<string> wordList;
-        public int DifficultyBias { get; set; }
+        public double DifficultyBias { get; set; }
         private int checkpointInterval = 10;
         private int nextCheckpointScore;
+        private double minBias = 0.01;
+        private double maxBias = 0.99;
+        private double biasInterval = 0.01;
 
         public EnemyManager(Game game, Player player, List<string> wordList):base(game)
         {
@@ -30,7 +33,7 @@ namespace Typocalypse
             IsActive = true;
             InputManager = new EnemyInputManager(wordList, game);
             this.wordList = wordList;
-            DifficultyBias = 20;
+            DifficultyBias = maxBias;
             nextCheckpointScore = checkpointInterval;
         }
 
@@ -70,10 +73,10 @@ namespace Typocalypse
                                      enemies.Remove((Enemy) s);
                                      player.EnemyKilled(10);
                                  };
-            if (player.Score >= nextCheckpointScore)
+            if (player.Score >= nextCheckpointScore && DifficultyBias > minBias)
             {
                 nextCheckpointScore += checkpointInterval;
-                DifficultyBias -= 1;
+                DifficultyBias -= biasInterval;
             }
             base.Update(gameTime);
         }
