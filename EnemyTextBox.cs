@@ -35,8 +35,6 @@ namespace Typocalypse
 
         private SpriteFont matchedFont, unmatchedFont;
 
-        private Texture2D pixel;
-
         private int matchedPrefixLength;
 
         /// <summary>
@@ -54,7 +52,6 @@ namespace Typocalypse
             this.spriteBatch = (SpriteBatch)game.Services.GetService(typeof(SpriteBatch));
             this.matchedFont = game.Content.Load<SpriteFont>("MatchedFont");
             this.unmatchedFont = game.Content.Load<SpriteFont>("UnmatchedFont");
-            this.pixel = game.Content.Load<Texture2D>("pixel");
             updateDimensions();
         }
 
@@ -99,7 +96,6 @@ namespace Typocalypse
 
             Vector2 unmatchedLocation = new Vector2(Location.X + matchedFont.MeasureString(matchedString).X, Location.Y);
 
-            //spriteBatch.Draw(pixel, new Rectangle((int)Location.X, (int)Location.Y, (int)Dimension.X, (int)Dimension.Y), Color.White);
             spriteBatch.DrawString(matchedFont, matchedString, Location, Color.Red, 0, Vector2.Zero, Vector2.One, SpriteEffects.None, 0.5f);
             spriteBatch.DrawString(unmatchedFont, unmatchedString, unmatchedLocation, Color.DarkGreen, 0, Vector2.Zero, Vector2.One, SpriteEffects.None, 0.5f);
 
