@@ -60,7 +60,6 @@ namespace Typocalypse
         {
             get
             {
-                //return new Rectangle((int)Position.X, (int)Position.Y, (int)Position.X + Width, (int)Position.Y + Height);
                 return new Rectangle((int)Position.X, (int)Position.Y, Width, Height);
             }
         }
@@ -101,7 +100,6 @@ namespace Typocalypse
         public float GetRelativeAngle(Vector2 other)
         {
             float distX = other.X - X, distY = other.Y - Y;
-            //return (float)Math.Atan2(distX,distY);
             return -MathHelper.WrapAngle((float) (Math.Atan2(distX, distY) - Math.PI));
         }
     }
