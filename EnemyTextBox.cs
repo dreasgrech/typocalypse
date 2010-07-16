@@ -97,7 +97,7 @@ namespace Typocalypse
             Vector2 unmatchedLocation = new Vector2(Location.X + matchedFont.MeasureString(matchedString).X, Location.Y);
 
             spriteBatch.DrawString(matchedFont, matchedString, Location, Color.Red, 0, Vector2.Zero, Vector2.One, SpriteEffects.None, 0.5f);
-            spriteBatch.DrawString(unmatchedFont, unmatchedString, unmatchedLocation, Color.DarkGreen, 0, Vector2.Zero, Vector2.One, SpriteEffects.None, 0.5f);
+            spriteBatch.DrawString(unmatchedFont, unmatchedString, unmatchedLocation, Color.White, 0, Vector2.Zero, Vector2.One, SpriteEffects.None, 0.5f);
 
             base.Draw(gameTime);
         }
