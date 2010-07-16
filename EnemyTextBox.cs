@@ -57,7 +57,7 @@ namespace Typocalypse
 
         private void updateDimensions()
         {
-            Dimension = new Vector2(matchedFont.MeasureString(Text).X+2, matchedFont.MeasureString(Text).Y);
+            Dimension = new Vector2(matchedFont.MeasureString(Text).X + 2, matchedFont.MeasureString(Text).Y);
         }
 
         /// <summary>

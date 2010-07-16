@@ -78,13 +78,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="pixel.png">
-      <Name>pixel</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="background.jpg">
       <Name>background</Name>
       <Importer>TextureImporter</Importer>

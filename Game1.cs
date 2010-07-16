@@ -30,6 +30,8 @@ namespace Typocalypse
         private Texture2D splash;
         private Song theme;
         private bool splashOn = true;
+        Vector2 scoreDisplayPosition = new Vector2(20, 15);
+        private SpriteFont scoreDisplay;
 
         public Game1()
         {
@@ -84,6 +86,7 @@ namespace Typocalypse
             background = Content.Load<Texture2D>("background");
             splash = Content.Load<Texture2D>("splash");
             theme = Content.Load<Song>("themesong");
+            scoreDisplay = Content.Load<SpriteFont>("ScoreFont");
             MediaPlayer.IsRepeating = true;
             MediaPlayer.Play(theme);
         }
@@ -127,6 +130,7 @@ namespace Typocalypse
             spriteBatch.Begin(SpriteBlendMode.AlphaBlend, SpriteSortMode.FrontToBack, SaveStateMode.None);
             base.Draw(gameTime);
             spriteBatch.Draw(background, Vector2.Zero, new Rectangle(0,0,GraphicsDevice.PresentationParameters.BackBufferWidth, GraphicsDevice.PresentationParameters.BackBufferHeight), Color.White, 0, Vector2.Zero, 1f, SpriteEffects.None, 0);
+            spriteBatch.DrawString(scoreDisplay, "Score: " + player.Score, scoreDisplayPosition, Color.Red, 0, Vector2.Zero, Vector2.One, SpriteEffects.None, 1f);
             if (splashOn)
             {
                 spriteBatch.Draw(splash, Vector2.Zero, new Rectangle(0, 0, GraphicsDevice.PresentationParameters.BackBufferWidth, GraphicsDevice.PresentationParameters.BackBufferHeight), Color.White, 0, Vector2.Zero, 1f, SpriteEffects.None, 1);
