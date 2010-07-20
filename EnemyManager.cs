@@ -16,7 +16,6 @@ namespace Typocalypse
         public static readonly List<Enemy> enemies = new List<Enemy>();
         private readonly Player player;
         public EnemyInputManager InputManager{ get; set;}
-        public event EventHandler PlayerHit;
         public bool IsActive { get; set; }
         private List<string> wordList;
         public double DifficultyBias { get; set; }
