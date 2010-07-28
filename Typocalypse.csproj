@@ -100,7 +100,6 @@
     <Compile Include="Hooks\HookManager.Structures.cs" />
     <Compile Include="Hooks\HookManager.Windows.cs" />
     <Compile Include="Hooks\MouseEventExtArgs.cs" />
-    <Compile Include="KeyboardHandler.cs" />
     <Compile Include="KeyboardInputEventArgs.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Projectile.cs" />
