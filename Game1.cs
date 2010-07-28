@@ -140,10 +140,10 @@ namespace Typocalypse
 
         void PopulateWordList()
         {
-            string path = @"Content\dict.txt", line;
+            string path = Path.Combine(StorageContainer.TitleLocation,"Content/dict.txt"), line;
             if (File.Exists(path))
             {
-                StreamReader file = new StreamReader(path); ;
+                StreamReader file = new StreamReader(path); 
                 try
                 {
                     while ((line = file.ReadLine()) != null)
