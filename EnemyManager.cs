@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 
 namespace Typocalypse
@@ -11,19 +9,19 @@ namespace Typocalypse
         //TODO:Refactor magic numbers
         private const int YPosition = -50;
         private readonly Random randGenerator;
-        private int generateInterval = 3000;
+        private const int generateInterval = 3000;
         private TimeSpan lastTimeGenerated;
         public static readonly List<Enemy> enemies = new List<Enemy>();
         private readonly Player player;
         public EnemyInputManager InputManager{ get; set;}
         public bool IsActive { get; set; }
-        private List<string> wordList;
+        private readonly List<string> wordList;
         public double DifficultyBias { get; set; }
-        private int checkpointInterval = 10;
+        private const int checkpointInterval = 10;
         private int nextCheckpointScore;
-        private double minBias = 0.01;
-        private double maxBias = 0.99;
-        private double biasInterval = 0.01;
+        private const double minBias = 0.01;
+        private const double maxBias = 0.99;
+        private const double biasInterval = 0.01;
 
         public EnemyManager(Game game, Player player, List<string> wordList):base(game)
         {

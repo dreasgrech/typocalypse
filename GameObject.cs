@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using SB = Microsoft.Xna.Framework.Graphics.SpriteBatch;
@@ -79,11 +76,6 @@ namespace Typocalypse
             SpriteBatch = (SB) Game.Services.GetService(typeof (SB));
             ZOrder = zOrder;
             screenBox = new Rectangle(0,0,Game.GraphicsDevice.PresentationParameters.BackBufferWidth,Game.GraphicsDevice.PresentationParameters.BackBufferHeight);
-        }
-
-        public override void Initialize()
-        {                                              
-            base.Initialize();
         }
 
         protected bool IsInScreen()

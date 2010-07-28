@@ -1,15 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
-using Microsoft.Xna.Framework.Net;
-using Microsoft.Xna.Framework.Storage;
 
 namespace Typocalypse
 {
@@ -31,9 +21,9 @@ namespace Typocalypse
         /// </summary>
         public Vector2 Dimension { get; private set; }
 
-        private SpriteBatch spriteBatch;
+        private readonly SpriteBatch spriteBatch;
 
-        private SpriteFont matchedFont, unmatchedFont;
+        private readonly SpriteFont matchedFont, unmatchedFont;
 
         private int matchedPrefixLength;
 
@@ -42,20 +32,18 @@ namespace Typocalypse
         /// </summary>
         /// <param name="game">The Game that the game component should be attached to.</param>
         /// <param name="text">The text to display in the text box.</param>
-        /// <param name="location">The location of the text box on the screen.</param>
-        public EnemyTextBox(Game game, string text)
-            : base(game)
+        public EnemyTextBox(Game game, string text) : base(game)
         {
-            this.Text = text;
-            this.Location = new Vector2(-50);
-            this.matchedPrefixLength = 0;
-            this.spriteBatch = (SpriteBatch)game.Services.GetService(typeof(SpriteBatch));
-            this.matchedFont = game.Content.Load<SpriteFont>("MatchedFont");
-            this.unmatchedFont = game.Content.Load<SpriteFont>("UnmatchedFont");
-            updateDimensions();
+            Text = text;
+            Location = new Vector2(-50);
+            matchedPrefixLength = 0;
+            spriteBatch = (SpriteBatch)game.Services.GetService(typeof(SpriteBatch));
+            matchedFont = game.Content.Load<SpriteFont>("MatchedFont");
+            unmatchedFont = game.Content.Load<SpriteFont>("UnmatchedFont");
+            UpdateDimensions();
         }
 
-        private void updateDimensions()
+        private void UpdateDimensions()
         {
             Dimension = new Vector2(matchedFont.MeasureString(Text).X + 2, matchedFont.MeasureString(Text).Y);
         }
@@ -77,7 +65,7 @@ namespace Typocalypse
             if (prefixLength < Text.Length)
             {
                 matchedPrefixLength = prefixLength;
-                updateDimensions();
+                UpdateDimensions();
             }
         }
 
@@ -91,7 +79,7 @@ namespace Typocalypse
 
         public override void Draw(GameTime gameTime)
         {
-            string matchedString   = Text.Substring(0, matchedPrefixLength);
+            string matchedString = Text.Substring(0, matchedPrefixLength);
             string unmatchedString = Text.Substring(matchedPrefixLength);
 
             Vector2 unmatchedLocation = new Vector2(Location.X + matchedFont.MeasureString(matchedString).X, Location.Y);

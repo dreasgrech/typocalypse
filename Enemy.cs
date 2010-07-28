@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -11,9 +7,9 @@ namespace Typocalypse
 {
     public class Enemy:GameObject
     {
-        private Player player;
-        private float speed;
-        private Texture2D objectTexture;
+        private readonly Player player;
+        private readonly float speed;
+        private readonly Texture2D objectTexture;
         public string Text { get; set; }
 
         public event EventHandler Dead;
