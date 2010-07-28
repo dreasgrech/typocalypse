@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace Typocalypse
 {
     class Projectile:GameObject
     {
-        private Texture2D objectTexture;
-        private float speed;
+        private readonly Texture2D objectTexture;
+        private readonly float speed;
 
         public Projectile(Game game, Vector2 initialPosition, float initialAngle, float zOrder, string imageAssetName, float speed) : base(game, initialPosition, initialAngle, zOrder)
         {

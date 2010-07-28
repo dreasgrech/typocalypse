@@ -1,28 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 namespace Typocalypse
 {
     public class Player : GameObject
     {
-        private Texture2D objectTexture;
-
+        private readonly Texture2D objectTexture;
         private readonly SoundEffect playerDies;
-        public int Score { get; set; }
 
+        public int Score { get; set; }
         public EnemyManager EnemyManager { get; set; }
         public bool IsAlive { get; set; }
 
-        public Player(Game game, Vector2 initialPosition, float initialAngle, float zOrder, string imageAssetName)
-            : base(game, initialPosition, initialAngle, zOrder)
+        public Player(Game game, Vector2 initialPosition, float initialAngle, float zOrder, string imageAssetName) : base(game, initialPosition, initialAngle, zOrder)
         {
             objectTexture = game.Content.Load<Texture2D>(imageAssetName);
             playerDies = game.Content.Load<SoundEffect>("player-dies");
