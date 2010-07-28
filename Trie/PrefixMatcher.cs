@@ -102,6 +102,10 @@ namespace Typocalypse.Trie
             return currMatch.IsTerminater();
         }
 
+        /// <summary>
+        /// Get the value mapped by the currently entered prefix.
+        /// </summary>
+        /// <returns>The value mapped by the currently entered prefix or null if current prefix does not map to any value.</returns>
         public V GetExactMatch()
         {
             return IsExactMatch() ? currMatch.Value : null;
